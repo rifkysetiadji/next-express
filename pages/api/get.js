@@ -1,5 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { serialize } from "cookie";
 
 export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+  // res.setCookie
+  console.log("cookie", req.cookies);
+  res.send(req.cookies);
 }
