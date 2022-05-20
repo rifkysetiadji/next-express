@@ -6,6 +6,8 @@ export default function handler(req, res) {
   let options = {
     maxAge: 1000 * 60 * 15,
     httpOnly: true,
+    domain: ".next-express-swart.vercel.app",
+    sameSite: "none",
   };
   res.setHeader(
     "Access-Control-Allow-Origin",
