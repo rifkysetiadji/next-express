@@ -6,7 +6,7 @@ export default function handler(req, res) {
   let options = {
     maxAge: 1000 * 60 * 15,
     httpOnly: true,
-    domain: ".react-cookie.vercel.app/",
+    domain: ".react-cookie.vercel.app",
   };
   res.setHeader(
     "Access-Control-Allow-Origin",
