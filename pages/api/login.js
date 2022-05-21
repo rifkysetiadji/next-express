@@ -9,10 +9,10 @@ export default function handler(req, res) {
     domain: ".next-express-swart.vercel.app",
     sameSite: "none",
   };
-  // res.setHeader(
-  //   "Access-Control-Allow-Origin",
-  //   "https://react-cookie.vercel.app"
-  // );
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://react-cookie.vercel.app"
+  );
   res.setHeader("Set-Cookie", serialize("Rifky", "dude", options));
   res.status(200).json({ name: "John Doe asdf" });
 }
