@@ -6,7 +6,7 @@ export default function handler(req, res) {
   let options = {
     maxAge: 1000 * 60 * 15,
     httpOnly: true,
-    path: "/api",
+    path: "/asdf",
     // domain: ".next-express-swart.vercel.app",
   };
   // res.setHeader(
