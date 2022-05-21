@@ -8,7 +8,7 @@ export default function handler(req, res) {
     httpOnly: true,
     path: "/api",
     sameSite: "none",
-    domain: ".vercel.app",
+    // domain: ".next-express-swart.vercel.app",
   };
   res.setHeader(
     "Access-Control-Allow-Origin",
