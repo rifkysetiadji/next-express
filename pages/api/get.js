@@ -8,6 +8,6 @@ export default function handler(req, res) {
     "Access-Control-Allow-Origin",
     "https://react-cookie.vercel.app"
   );
-  //   res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Allow-Credentials", "true");
   res.send(req.cookies);
 }
