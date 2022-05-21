@@ -12,15 +12,6 @@ const nextConfig = {
           },
         ],
       },
-      {
-        source: "/api/login",
-        headers: [
-          {
-            key: "Access-Control-Allow-Credentials",
-            value: "true",
-          },
-        ],
-      },
     ];
   },
 };
