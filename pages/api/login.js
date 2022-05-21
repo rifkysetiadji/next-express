@@ -6,12 +6,13 @@ export default function handler(req, res) {
   let options = {
     maxAge: 1000 * 60 * 15,
     httpOnly: true,
+    path: "/api",
     // domain: ".next-express-swart.vercel.app",
   };
-  // res.setHeader(
-  //   "Access-Control-Allow-Origin",
-  //   "https://react-cookie.vercel.app"
-  // );
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://react-cookie.vercel.app"
+  );
   res.setHeader("Set-Cookie", serialize("Rifky", "dude", options));
   res.status(200).json({ name: "John Doe asdf" });
 }
